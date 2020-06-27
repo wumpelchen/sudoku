@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_outer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 466px;
+    background: blueviolet;
+}
+
+.grid_inner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 156px;
+    padding: 2px;
+  }
+  input {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    margin: 1px;
+    height: 48px;
+    text-align: center;
+    width: 48px;
+    border-radius: 4px;
+    font-size: 24px;
+  }
+
+  .readOnly{
+      background-color: rgb(182, 182, 182);
+  }
+
+  input:focus{
+      background: antiquewhite;
+  }
+
+  .head{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      width: 100%;
+      background: blueviolet;
+      margin-bottom: 20px;
+  }
+
+  .head button, .head select{
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      transition: all 450ms ease;
+  }
+
+  .head button{
+      background-color: #333;
+      color: #fff;
+  }
+
+  .head button:hover{
+      opacity: 0.8;
+  }
+
+  .head h1{
+      font-size: 30px;
+  }
+
+  .wrong{
+      background-color: tomato;
+  }
+
+
+.num_box{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    width: 200px;
+    background: #333;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.num_block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.num_block button{
+    width: 48px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: all 450ms ease;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.num_block button:hover{
+    opacity: 0.8;
+}
+
+.btnClose{
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    background: tomato;
+    border: none;
+}
+
+.hide{
+      display: none;
+  }
