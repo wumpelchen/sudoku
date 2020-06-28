@@ -11,14 +11,10 @@
     <div class="head">
         <h1>SIMPLE - SUDOKU </h1>
 
-        <div class="timer">
-
-        </div>
-
         <div>
             <select name="selectDiff" id="selectDiff">
                 <option value="easy">sehr einfach</option>
-                <option value="medium">einfach</option>
+                <option value="medium" selected>einfach</option>
                 <option value="hard">medium</option>
                 <option value="very-hard">hart</option>
                 <option value="insane">ich bin ein Genie</option>
@@ -30,116 +26,124 @@
         </div>
     </div>
 
+    <!--------------------------------------------------------------------------------------------------->
+
+    <div class="timer">
+        00:00:00
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------->
+
     <div class="container">
         <div class="grid_outer">
 
             <div class="grid_inner">
-                <input data-block="1" data-row="0" data-cell="0" data-canEdit="true" type="text" value="x">
-                <input data-block="1" data-row="0" data-cell="1" data-canEdit="true" type="text" value="x">
-                <input data-block="1" data-row="0" data-cell="2" data-canEdit="true" type="text" value="x">
-                <input data-block="1" data-row="1" data-cell="0" data-canEdit="true" type="text" value="r2">
-                <input data-block="1" data-row="1" data-cell="1" data-canEdit="true" type="text" value="r2">
-                <input data-block="1" data-row="1" data-cell="2" data-canEdit="true" type="text" value="r2">
-                <input data-block="1" data-row="2" data-cell="0" data-canEdit="true" type="text" value="r3">
-                <input data-block="1" data-row="2" data-cell="1" data-canEdit="true" type="text" value="r3">
-                <input data-block="1" data-row="2" data-cell="2" data-canEdit="true" type="text" value="r3">
+                <input data-block="1" data-col="0" data-row="0" data-cell="0" data-canEdit="true" type="text" value="1">
+                <input data-block="1" data-col="1" data-row="0" data-cell="1" data-canEdit="true" type="text" value="2">
+                <input data-block="1" data-col="2" data-row="0" data-cell="2" data-canEdit="true" type="text" value="3">
+                <input data-block="1" data-col="0" data-row="1" data-cell="0" data-canEdit="true" type="text" value="4">
+                <input data-block="1" data-col="1" data-row="1" data-cell="1" data-canEdit="true" type="text" value="5">
+                <input data-block="1" data-col="2" data-row="1" data-cell="2" data-canEdit="true" type="text" value="6">
+                <input data-block="1" data-col="0" data-row="2" data-cell="0" data-canEdit="true" type="text" value="7">
+                <input data-block="1" data-col="1" data-row="2" data-cell="1" data-canEdit="true" type="text" value="8">
+                <input data-block="1" data-col="2" data-row="2" data-cell="2" data-canEdit="true" type="text" value="9">
             </div>
 
             <div class="grid_inner">
-                <input data-block="2" data-row="0" data-cell="3" data-canEdit="true" type="text" value="x">
-                <input data-block="2" data-row="0" data-cell="4" data-canEdit="true"type="text" value="x">
-                <input data-block="2" data-row="0" data-cell="5" data-canEdit="true" type="text" value="x">
-                <input data-block="2" data-row="1" data-cell="3" data-canEdit="true" type="text" value="r2">
-                <input data-block="2" data-row="1" data-cell="4" data-canEdit="true" type="text" value="r2">
-                <input data-block="2" data-row="1" data-cell="5" data-canEdit="true" type="text" value="r2">
-                <input data-block="2" data-row="2" data-cell="3" data-canEdit="true" type="text" value="r3">
-                <input data-block="2" data-row="2" data-cell="4" data-canEdit="true" type="text" value="r3">
-                <input data-block="2" data-row="2" data-cell="5" data-canEdit="true" type="text" value="r3">
+                <input data-block="2" data-col="3" data-row="0" data-cell="3" data-canEdit="true" type="text" value="x">
+                <input data-block="2" data-col="4" data-row="0" data-cell="4" data-canEdit="true"type="text" value="x">
+                <input data-block="2" data-col="5" data-row="0" data-cell="5" data-canEdit="true" type="text" value="x">
+                <input data-block="2" data-col="3" data-row="1" data-cell="3" data-canEdit="true" type="text" value="r2">
+                <input data-block="2" data-col="4" data-row="1" data-cell="4" data-canEdit="true" type="text" value="r2">
+                <input data-block="2" data-col="5" data-row="1" data-cell="5" data-canEdit="true" type="text" value="r2">
+                <input data-block="2" data-col="3" data-row="2" data-cell="3" data-canEdit="true" type="text" value="r3">
+                <input data-block="2" data-col="4" data-row="2" data-cell="4" data-canEdit="true" type="text" value="r3">
+                <input data-block="2" data-col="5" data-row="2" data-cell="5" data-canEdit="true" type="text" value="r3">
             </div>
 
             <div class="grid_inner">
-                <input data-block="3" data-row="0" data-cell="6" data-canEdit="true" type="text" value="x">
-                <input data-block="3" data-row="0" data-cell="7" data-canEdit="true" type="text" value="x">
-                <input data-block="3" data-row="0" data-cell="8" data-canEdit="true" type="text" value="x">
-                <input data-block="3" data-row="1" data-cell="6" data-canEdit="true" type="text" value="r2">
-                <input data-block="3" data-row="1" data-cell="7" data-canEdit="true" type="text" value="r2">
-                <input data-block="3" data-row="1" data-cell="8" data-canEdit="true" type="text" value="r2">
-                <input data-block="3" data-row="2" data-cell="6" data-canEdit="true" type="text" value="r3">
-                <input data-block="3" data-row="2" data-cell="7" data-canEdit="true" type="text" value="r3">
-                <input data-block="3" data-row="2" data-cell="8" data-canEdit="true" type="text" value="r3">
+                <input data-block="3" data-col="6" data-row="0" data-cell="6" data-canEdit="true" type="text" value="x">
+                <input data-block="3" data-col="7" data-row="0" data-cell="7" data-canEdit="true" type="text" value="x">
+                <input data-block="3" data-col="8" data-row="0" data-cell="8" data-canEdit="true" type="text" value="x">
+                <input data-block="3" data-col="6" data-row="1" data-cell="6" data-canEdit="true" type="text" value="r2">
+                <input data-block="3" data-col="7" data-row="1" data-cell="7" data-canEdit="true" type="text" value="r2">
+                <input data-block="3" data-col="8" data-row="1" data-cell="8" data-canEdit="true" type="text" value="r2">
+                <input data-block="3" data-col="6" data-row="2" data-cell="6" data-canEdit="true" type="text" value="r3">
+                <input data-block="3" data-col="7" data-row="2" data-cell="7" data-canEdit="true" type="text" value="r3">
+                <input data-block="3" data-col="8" data-row="2" data-cell="8" data-canEdit="true" type="text" value="r3">
                 
             </div>
 
             <div class="grid_inner">
-                <input data-block="4" data-row="3" data-cell="0" data-canEdit="true" type="text" value="r4">
-                <input data-block="4" data-row="3" data-cell="1" data-canEdit="true" type="text" value="r4">
-                <input data-block="4" data-row="3" data-cell="2" data-canEdit="true" type="text" value="r4">
-                <input data-block="4" data-row="4" data-cell="0" data-canEdit="true" type="text" value="r5">
-                <input data-block="4" data-row="4" data-cell="1" data-canEdit="true" type="text" value="r5">
-                <input data-block="4" data-row="4" data-cell="2" data-canEdit="true" type="text" value="r5">
-                <input data-block="4" data-row="5" data-cell="0" data-canEdit="true" type="text" value="r6">
-                <input data-block="4" data-row="5" data-cell="1" data-canEdit="true" type="text" value="r6">
-                <input data-block="4" data-row="5" data-cell="2" data-canEdit="true" type="text" value="r6"> 
+                <input data-block="4" data-col="0" data-row="3" data-cell="0" data-canEdit="true" type="text" value="r4">
+                <input data-block="4" data-col="1" data-row="3" data-cell="1" data-canEdit="true" type="text" value="r4">
+                <input data-block="4" data-col="2" data-row="3" data-cell="2" data-canEdit="true" type="text" value="r4">
+                <input data-block="4" data-col="0" data-row="4" data-cell="0" data-canEdit="true" type="text" value="r5">
+                <input data-block="4" data-col="1" data-row="4" data-cell="1" data-canEdit="true" type="text" value="r5">
+                <input data-block="4" data-col="2" data-row="4" data-cell="2" data-canEdit="true" type="text" value="r5">
+                <input data-block="4" data-col="0" data-row="5" data-cell="0" data-canEdit="true" type="text" value="r6">
+                <input data-block="4" data-col="1" data-row="5" data-cell="1" data-canEdit="true" type="text" value="r6">
+                <input data-block="4" data-col="2" data-row="5" data-cell="2" data-canEdit="true" type="text" value="r6"> 
             </div>
 
             <div class="grid_inner">
-                <input data-block="5" data-row="3" data-cell="3" data-canEdit="true" type="text" value="r4">
-                <input data-block="5" data-row="3" data-cell="4" data-canEdit="true" type="text" value="r4">
-                <input data-block="5" data-row="3" data-cell="5" data-canEdit="true" type="text" value="r4">
-                <input data-block="5" data-row="4" data-cell="3" data-canEdit="true" type="text" value="r5">
-                <input data-block="5" data-row="4" data-cell="4" data-canEdit="true" type="text" value="r5">
-                <input data-block="5" data-row="4" data-cell="5" data-canEdit="true" type="text" value="r5">
-                <input data-block="5" data-row="5" data-cell="3" data-canEdit="true" type="text" value="r6">
-                <input data-block="5" data-row="5" data-cell="4" data-canEdit="true" type="text" value="r6">
-                <input data-block="5" data-row="5" data-cell="5" data-canEdit="true" ype="text" value="r6"> 
+                <input data-block="5" data-col="3" data-row="3" data-cell="3" data-canEdit="true" type="text" value="r4">
+                <input data-block="5" data-col="4" data-row="3" data-cell="4" data-canEdit="true" type="text" value="r4">
+                <input data-block="5" data-col="5" data-row="3" data-cell="5" data-canEdit="true" type="text" value="r4">
+                <input data-block="5" data-col="3" data-row="4" data-cell="3" data-canEdit="true" type="text" value="r5">
+                <input data-block="5" data-col="4" data-row="4" data-cell="4" data-canEdit="true" type="text" value="r5">
+                <input data-block="5" data-col="5" data-row="4" data-cell="5" data-canEdit="true" type="text" value="r5">
+                <input data-block="5" data-col="3" data-row="5" data-cell="3" data-canEdit="true" type="text" value="r6">
+                <input data-block="5" data-col="4" data-row="5" data-cell="4" data-canEdit="true" type="text" value="r6">
+                <input data-block="5" data-col="5" data-row="5" data-cell="5" data-canEdit="true" ype="text" value="r6"> 
             </div>
 
             <div class="grid_inner">
-                <input data-block="6" data-row="3" data-cell="6" data-canEdit="true" type="text" value="r4">
-                <input data-block="6" data-row="3" data-cell="7" data-canEdit="true" type="text" value="r4">
-                <input data-block="6" data-row="3" data-cell="8" data-canEdit="true" type="text" value="r4">
-                <input data-block="6" data-row="4" data-cell="6" data-canEdit="true" type="text" value="r5">
-                <input data-block="6" data-row="4" data-cell="7" data-canEdit="true" type="text" value="r5">
-                <input data-block="6" data-row="4" data-cell="8" data-canEdit="true" type="text" value="r5">
-                <input data-block="6" data-row="5" data-cell="6" data-canEdit="true" type="text" value="r6">
-                <input data-block="6" data-row="5" data-cell="7" data-canEdit="true" type="text" value="r6">
-                <input data-block="6" data-row="5" data-cell="8" data-canEdit="true" type="text" value="r6"> 
+                <input data-block="6" data-col="6" data-row="3" data-cell="6" data-canEdit="true" type="text" value="r4">
+                <input data-block="6" data-col="7" data-row="3" data-cell="7" data-canEdit="true" type="text" value="r4">
+                <input data-block="6" data-col="8" data-row="3" data-cell="8" data-canEdit="true" type="text" value="r4">
+                <input data-block="6" data-col="6" data-row="4" data-cell="6" data-canEdit="true" type="text" value="r5">
+                <input data-block="6" data-col="7" data-row="4" data-cell="7" data-canEdit="true" type="text" value="r5">
+                <input data-block="6" data-col="8" data-row="4" data-cell="8" data-canEdit="true" type="text" value="r5">
+                <input data-block="6" data-col="6" data-row="5" data-cell="6" data-canEdit="true" type="text" value="r6">
+                <input data-block="6" data-col="7" data-row="5" data-cell="7" data-canEdit="true" type="text" value="r6">
+                <input data-block="6" data-col="8" data-row="5" data-cell="8" data-canEdit="true" type="text" value="r6"> 
             </div>
 
             <div class="grid_inner">
-                <input data-block="7" data-row="6" data-cell="0" data-canEdit="true" type="text" value="r7">
-                <input data-block="7" data-row="6" data-cell="1" data-canEdit="true" type="text" value="r7">
-                <input data-block="7" data-row="6" data-cell="2" data-canEdit="true" type="text" value="r7">
-                <input data-block="7" data-row="7" data-cell="0" data-canEdit="true" type="text" value="r8">
-                <input data-block="7" data-row="7" data-cell="1" data-canEdit="true" type="text" value="r8">
-                <input data-block="7" data-row="7" data-cell="2" data-canEdit="true" type="text" value="r8">
-                <input data-block="7" data-row="8" data-cell="0" data-canEdit="true" type="text" value="r9">
-                <input data-block="7" data-row="8" data-cell="1" data-canEdit="true" type="text" value="r9">
-                <input data-block="7" data-row="8" data-cell="2" data-canEdit="true" type="text" value="r9"> 
+                <input data-block="7" data-col="0" data-row="6" data-cell="0" data-canEdit="true" type="text" value="r7">
+                <input data-block="7" data-col="1" data-row="6" data-cell="1" data-canEdit="true" type="text" value="r7">
+                <input data-block="7" data-col="2" data-row="6" data-cell="2" data-canEdit="true" type="text" value="r7">
+                <input data-block="7" data-col="0" data-row="7" data-cell="0" data-canEdit="true" type="text" value="r8">
+                <input data-block="7" data-col="1" data-row="7" data-cell="1" data-canEdit="true" type="text" value="r8">
+                <input data-block="7" data-col="2" data-row="7" data-cell="2" data-canEdit="true" type="text" value="r8">
+                <input data-block="7" data-col="0" data-row="8" data-cell="0" data-canEdit="true" type="text" value="r9">
+                <input data-block="7" data-col="1" data-row="8" data-cell="1" data-canEdit="true" type="text" value="r9">
+                <input data-block="7" data-col="2" data-row="8" data-cell="2" data-canEdit="true" type="text" value="r9"> 
             </div>
 
             <div class="grid_inner">
-                <input data-block="8" data-row="6" data-cell="3" data-canEdit="true" type="text" value="r7">
-                <input data-block="8" data-row="6" data-cell="4" data-canEdit="true" type="text" value="r7">
-                <input data-block="8" data-row="6" data-cell="5" data-canEdit="true" type="text" value="r7">
-                <input data-block="8" data-row="7" data-cell="3" data-canEdit="true" type="text" value="r8">
-                <input data-block="8" data-row="7" data-cell="4" data-canEdit="true" type="text" value="r8">
-                <input data-block="8" data-row="7" data-cell="5" data-canEdit="true" type="text" value="r8">
-                <input data-block="8" data-row="8" data-cell="3" data-canEdit="true" type="text" value="r9">
-                <input data-block="8" data-row="8" data-cell="4" data-canEdit="true" type="text" value="r9">
-                <input data-block="8" data-row="8" data-cell="5" data-canEdit="true" type="text" value="r9"> 
+                <input data-block="8" data-col="3" data-row="6" data-cell="3" data-canEdit="true" type="text" value="r7">
+                <input data-block="8" data-col="4" data-row="6" data-cell="4" data-canEdit="true" type="text" value="r7">
+                <input data-block="8" data-col="5" data-row="6" data-cell="5" data-canEdit="true" type="text" value="r7">
+                <input data-block="8" data-col="3" data-row="7" data-cell="3" data-canEdit="true" type="text" value="r8">
+                <input data-block="8" data-col="4" data-row="7" data-cell="4" data-canEdit="true" type="text" value="r8">
+                <input data-block="8" data-col="5" data-row="7" data-cell="5" data-canEdit="true" type="text" value="r8">
+                <input data-block="8" data-col="3" data-row="8" data-cell="3" data-canEdit="true" type="text" value="r9">
+                <input data-block="8" data-col="4" data-row="8" data-cell="4" data-canEdit="true" type="text" value="r9">
+                <input data-block="8" data-col="5" data-row="8" data-cell="5" data-canEdit="true" type="text" value="r9"> 
             </div>
 
             <div class="grid_inner">
-                <input data-block="9" data-row="6" data-cell="6" data-canEdit="true" type="text" value="r7">
-                <input data-block="9" data-row="6" data-cell="7" data-canEdit="true" type="text" value="r7">
-                <input data-block="9" data-row="6" data-cell="8" data-canEdit="true" type="text" value="r7">
-                <input data-block="9" data-row="7" data-cell="6" data-canEdit="true" type="text" value="r8">
-                <input data-block="9" data-row="7" data-cell="7" data-canEdit="true" type="text" value="r8">
-                <input data-block="9" data-row="7" data-cell="8" data-canEdit="true" type="text" value="r8">
-                <input data-block="9" data-row="8" data-cell="6" data-canEdit="true" type="text" value="r9">
-                <input data-block="9" data-row="8" data-cell="7" data-canEdit="true" type="text" value="r9">
-                <input data-block="9" data-row="8" data-cell="8" data-canEdit="true" type="text" value="r9"> 
+                <input data-block="9" data-col="6" data-row="6" data-cell="6" data-canEdit="true" type="text" value="r7">
+                <input data-block="9" data-col="7" data-row="6" data-cell="7" data-canEdit="true" type="text" value="r7">
+                <input data-block="9" data-col="8" data-row="6" data-cell="8" data-canEdit="true" type="text" value="r7">
+                <input data-block="9" data-col="6" data-row="7" data-cell="6" data-canEdit="true" type="text" value="r8">
+                <input data-block="9" data-col="7" data-row="7" data-cell="7" data-canEdit="true" type="text" value="r8">
+                <input data-block="9" data-col="8" data-row="7" data-cell="8" data-canEdit="true" type="text" value="r8">
+                <input data-block="9" data-col="6" data-row="8" data-cell="6" data-canEdit="true" type="text" value="r9">
+                <input data-block="9" data-col="7" data-row="8" data-cell="7" data-canEdit="true" type="text" value="r9">
+                <input data-block="9" data-col="8" data-row="8" data-cell="8" data-canEdit="true" type="text" value="r9"> 
             </div>
            
 

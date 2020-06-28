@@ -15,8 +15,9 @@
 .grid_outer{
     display: grid;
     grid-template-columns: auto auto auto;
-    width: 466px;
-    background: blueviolet;
+    width: 468px;
+    background: #333;
+    border-radius: 5px;
 }
 
 .grid_inner {
@@ -40,6 +41,11 @@
       background-color: rgb(182, 182, 182);
   }
 
+  .highlightLine{
+      font-weight: bolder;
+      border: 2px solid yellowgreen;
+  }
+
   input:focus{
       background: antiquewhite;
   }
@@ -50,7 +56,6 @@
       padding: 20px;
       width: 100%;
       background: blueviolet;
-      margin-bottom: 20px;
   }
 
   .head button, .head select{
@@ -73,6 +78,16 @@
 
   .head h1{
       font-size: 30px;
+  }
+
+  .timer{
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background: rgb(230, 129, 255);
+      border-bottom: 1px solid #666;
+      margin-bottom: 20px;
   }
 
   .wrong{
@@ -107,6 +122,7 @@
     transition: all 450ms ease;
     font-size: 24px;
     font-weight: bold;
+    background: #ccc;
 }
 
 .num_block button:hover{
