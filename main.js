@@ -107,6 +107,7 @@ btnNeu.addEventListener('click', ()=>{
     sec = 0;
     min = 0;
     std = 0;
+    stopTimer = false;
 })
 
 //==========================================================================================
@@ -168,7 +169,8 @@ btnReady.addEventListener('click', ()=>{
     if(hasMistakes) alert('Sorry das war nicht ganz richtig!');
     if(!hasMistakes) {
         stopTimer = true;
-        alert('SUPER');
+        let timeStamp = document.querySelector('.timer').innerText;
+        alert(`SUPER, Du hast es in ${timeStamp} geschafft!`);
     }
 })
 
@@ -189,6 +191,21 @@ const numBlock = numBox.querySelectorAll('.numBtn');
 numBlock.forEach(btn=>btn.addEventListener('click', ()=>{
     focusOn.value = btn.id;
     showHideNumBox('hide');
+
+    //check if game is lost or ready
+    let canCheck = true;
+
+    let len = allInputs.length;
+
+    for(let i = 0; i < len; i++){
+        if(allInputs[i].value.length == 0){
+            canCheck = false;
+            break;
+        }
+    }
+    
+    if(canCheck) btnReady.click();
+
 }))
 
 //====================================================================================================
